@@ -52,7 +52,7 @@ const Salat = () => {
       {data == "" ? (
         <div className="h-[50%] flex items-center justify-center">لم يتم تحديد البلد و الولاية بعد</div>
       ) : (
-        <div className="h-[50%] w-[70%] p-5">
+        <div className="sm:h-[50%] min-h-max w-[70%] p-5">
           <div className="text-right">
             مواقيت الصلاة الخاصة بولاية <span>{wilaya}</span> - <span>{blad}</span>
           </div>
