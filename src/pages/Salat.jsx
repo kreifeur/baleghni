@@ -19,7 +19,7 @@ const Salat = () => {
     setCountry("");
   };
   return (
-    <div id="salat" className="p-2 flex flex-col gap-[20px] items-center h-screen justify-center ">
+    <div id="salat" className="p-2 flex flex-col gap-[20px] items-center min-h-screen justify-center ">
       <div className="text-4xl">مواقيت الصلاة</div>
       <div className="text-lg text-right">
         قال تعالى:"فَإِذَا قَضَيْتُمُ الصَّلَاةَ فَاذْكُرُوا اللَّهَ قِيَامًا
