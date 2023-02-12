@@ -26,6 +26,9 @@ const Contact = () => {
           }
         );
     }
+    setName("");
+    setEmail("");
+    setMessage("");
   };
   return (
     <div className="h-screen flex flex-col justify-between">
@@ -46,6 +49,7 @@ const Contact = () => {
           <div className="w-[100%] h-[30%] sm:h-[15%] flex justify-between flex-col-reverse sm:flex-row-reverse ">
             <input
               onChange={(e) => setName(e.target.value)}
+              value={name}
               placeholder="الاسم الكامل"
               className="h-[45%] sm:h-[100%] w-[100%] sm:w-[40%] text-right p-1 border outline-none"
               type="text"
@@ -54,6 +58,7 @@ const Contact = () => {
             />
             <input
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
               placeholder="البريد الالكتروني"
               className="h-[45%] sm:h-[100%] text-right  w-[100%] sm:w-[40%] p-1 border outline-none"
               type="email"
@@ -63,6 +68,7 @@ const Contact = () => {
           </div>
           <textarea
             onChange={(e) => setMessage(e.target.value)}
+            value={message}
             placeholder="مضمون الرسالة "
             className="text-right h-[50%] sm:h-[60%] w-[100%] p-1 border outline-none"
             name="message"
