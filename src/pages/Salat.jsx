@@ -19,7 +19,7 @@ const Salat = () => {
     setCountry("");
   };
   return (
-    <div id="salat" className="p-2 flex flex-col gap-[20px] items-center min-h-screen justify-center ">
+    <div id="salat" className="p-2 flex flex-col gap-[20px] items-center h-screen justify-center ">
       <div className="text-4xl">مواقيت الصلاة</div>
       <div className="text-lg text-right">
         قال تعالى:"فَإِذَا قَضَيْتُمُ الصَّلَاةَ فَاذْكُرُوا اللَّهَ قِيَامًا
@@ -52,11 +52,11 @@ const Salat = () => {
       {data == "" ? (
         <div className="h-[50%] flex items-center justify-center">لم يتم تحديد البلد و الولاية بعد</div>
       ) : (
-        <div className="min-h-[50%] w-[70%] p-5">
+        <div className="h-[50%] w-[70%] p-5">
           <div className="text-right">
             مواقيت الصلاة الخاصة بولاية <span>{wilaya}</span> - <span>{blad}</span>
           </div>
-          <div className=" p-2 flex sm:flex-row flex-col sm:justify-between mt-3 gap-[10px]">
+          <div className=" p-2 flex sm:flex-row flex-col sm:justify-between mt-3 gap-[3px] sm:gap-[10px]">
             <div className="p-2 sm:w-[15%] w-[90%] flex flex-col items-center justify-center rounded border border-2 border-black">
               <div>صلاة الفجر</div>
               <div className="text-xl">{data.Fajr}</div>
